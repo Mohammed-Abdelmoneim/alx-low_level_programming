@@ -10,8 +10,10 @@ int main(void)
 
 	for (l = 'a'; l <= 'z'; l++)
 	{
-		if (l != 'q' || l != 'e')
+		if (l)
 			putchar(l);
+		else if (l == 'q' || l == 'e')
+			return (0);
 	}
 
 	putchar('\n');
