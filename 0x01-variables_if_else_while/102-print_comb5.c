@@ -17,7 +17,7 @@ int main(void)
 		{
 			for (t = '0'; t <= '9'; t++)
 			{
-				for (r = '0'; r <= '9'; r++)
+				for (r = '1'; r <= '9'; r++)
 				{
 					if ((i == l || l != t || t != r || i != r))
 					putchar(i);
