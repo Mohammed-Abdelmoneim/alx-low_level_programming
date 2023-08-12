@@ -19,15 +19,16 @@ int main(void)
 			{
 				for (r = '1'; r <= '9'; r++)
 				{
-					if (i == l || l == t || t == r )
+					if (i == l || l == t || t == r)
 					{
-					putchar(i);
-					putchar(l);
-					putchar(' ');
-					putchar(t);
-					putchar(r);
-					putchar(',');
-					putchar(' ');
+						putchar(i);
+						putchar(l);
+						putchar(' ');
+						putchar(t);
+						putchar(r);
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
