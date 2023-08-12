@@ -19,7 +19,7 @@ int main(void)
 			{
 				for (r = '1'; r <= '9'; r++)
 				{
-					if (i != l || l != t)
+					if (i != l || l == t)
 					{
 						putchar(i);
 						putchar(l);
