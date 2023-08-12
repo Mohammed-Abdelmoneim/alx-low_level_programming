@@ -6,31 +6,18 @@
 */
 int main(void)
 {
-	int i;
-	int l;
-	int t;
-	int r;
-
-	for (i = '0'; i <= '9'; i++)
+	int i, j;
+	
+	for (i = 0; i <= 99; i++)
 	{
-		for (l = '0'; l <= '9'; l++)
-		{
-			for (t = '0'; t <= '9'; t++)
-			{
-				for (r = '1'; r <= '9'; r++)
-				{
-					if (i != l || i != r)
-					{
-						putchar(i);
-						putchar(l);
-						putchar(' ');
-						putchar(t);
-						putchar(r);
-						putchar(',');
-						putchar(' ');
-					}
-				}
-			}
+		for (j = i + 1; j <= 99; j++) {
+			putchar('0' + i / 10);
+			putchar('0' + i % 10);
+			putchar(' ');
+			putchar('0' + j / 10);
+			putchar('0' + j % 10);
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
