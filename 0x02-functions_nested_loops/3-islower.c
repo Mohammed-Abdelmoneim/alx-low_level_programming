@@ -10,7 +10,7 @@ int _islower(int c)
 {
 	int r = islower(c);
 
-	if (islower(c) != 0)
+	if (r != 0)
 		_putchar('1');
 	else
 		_putchar('0');
