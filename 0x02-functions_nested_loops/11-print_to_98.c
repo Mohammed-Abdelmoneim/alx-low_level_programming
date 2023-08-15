@@ -6,7 +6,7 @@
  * Return: the value of addition
  */
 
-int add(int n)
+int print_to_98(int n)
 {
 	int r = n;
 
