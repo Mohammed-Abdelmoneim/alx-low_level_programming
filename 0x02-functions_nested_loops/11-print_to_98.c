@@ -6,7 +6,7 @@
  * Return: the value of addition
  */
 
-int print_to_98(int n)
+void print_to_98(int n)
 {
 	int r = n;
 
@@ -20,6 +20,4 @@ int print_to_98(int n)
 		printf("%d, ", r);
 		r--;
 	}
-
-	return (r);
 }
