@@ -1,4 +1,5 @@
 #include "main.h"
+#include <ctype.h>
 /**
  * _islower - prints 1 if c is lowercase else prints 0
  * @c: first operand
