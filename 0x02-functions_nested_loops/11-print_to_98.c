@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  *  print_to_98 - print nums from 0 to 98
  * @n: first operand
