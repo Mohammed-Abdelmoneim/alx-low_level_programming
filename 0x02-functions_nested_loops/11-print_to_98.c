@@ -6,19 +6,28 @@
  *
  * Return: the value of addition
  */
-
 void print_to_98(int n)
 {
-	int r = n;
+	int t = n;
 
-	while (r <= 98)
+	if (t <= 98)
 	{
-		printf("%d, ", r);
-		r++;
+		while (t <= 98)
+		{
+			printf("%d", t);
+			if (t != 98)
+				printf(", ");
+			t++;
+		}
 	}
-	while (r >= 98)
+	else if (t >= 98)
 	{
-		printf("%d, ", r);
-		r--;
+		while (t >= 98)
+		{
+			printf("%d", t);
+			if (t != 98)
+				printf(", ");
+			t--;
+		}
 	}
 }
