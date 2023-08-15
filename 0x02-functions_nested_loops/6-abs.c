@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _isabs - prints 1 if c is lowercase else prints 0
- *@int: first operand
+ * _isabs - returns the absolute value of a number
+ *@c: first operand
  *
- * Return: 1 if c is lowercar 0 if else
+ * Return: 0
  */
 int _abs(int c)
 {
