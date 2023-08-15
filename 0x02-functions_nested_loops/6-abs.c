@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib.ih>
+#include <stdlib.h>
 /**
  * _isabs - prints 1 if c is lowercase else prints 0
  *@int: first operand
