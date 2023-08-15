@@ -6,9 +6,9 @@
  *
  * Return: 1 if c is lowercar 0 if else
  */
-int _isabs(int)
+int _isabs(int c)
 {
-	int r = abs(int);
+	int r = abs(c);
 
 	return (r);
 }
