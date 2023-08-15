@@ -29,6 +29,6 @@ int print_sign(int n)
 		_putchar(' ');
 		_putchar(n + '0');
 	}
-
+	return (0);
 }
 
