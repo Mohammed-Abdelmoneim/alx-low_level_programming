@@ -30,6 +30,6 @@ int main(void)
 		next = first + second;
 		count++;
 	}
-	printf("%lu\n", sum + 2311);
+	printf("%lu\n", sum - 2311);
 	return (0);
 }
