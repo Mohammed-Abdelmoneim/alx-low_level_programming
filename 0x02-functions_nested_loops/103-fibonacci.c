@@ -8,7 +8,7 @@ int main(void)
 {
 	int count = 3;
 
-	long int first = second = 0;
+	long int first = 0, second = 0;
 	long int next = first + second, sum;
 
 	while (count <= 50000)
