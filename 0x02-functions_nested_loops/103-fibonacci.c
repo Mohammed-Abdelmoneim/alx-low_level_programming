@@ -11,7 +11,7 @@ int main(void)
 	long int first, second;
 	long int next = first + second, sum;
 
-	while (count <= 5000000000000000)
+	while (count <= 50000)
 	{
 		sum += count;
 		if (sum < 4613732)
