@@ -3,7 +3,7 @@
 
 int  _isupper(int c)
 {
-	if (isupper != 0)
+	if (isupper(c) != 0)
 		return (1);
 	else if (isdigit(c) != 0)
 		return (1);
