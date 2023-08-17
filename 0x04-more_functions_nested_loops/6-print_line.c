@@ -4,6 +4,7 @@
  * print_line - print _ based on n number
  * @n: first param
  */
+
 void print_line(int n)
 {
 	int i;
@@ -16,7 +17,7 @@ void print_line(int n)
 		}
 		else
 		{
-			_putchar('_') * n;
+			_putchar('_');
 		}
 		i++;
 	}
