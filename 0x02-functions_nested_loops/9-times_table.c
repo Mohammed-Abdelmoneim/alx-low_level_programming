@@ -5,7 +5,7 @@
  *
  * Return: 0
 */
-int main(void)
+void times_table(void)
 {
 	int i, n;
 
@@ -19,5 +19,4 @@ int main(void)
 		}
 		printf("\n");
 	}
-	return (0);
 }
