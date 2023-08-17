@@ -2,7 +2,7 @@
 #include <ctype.h>
 
 /**
- * print_most_numbers - prints numbers from 0 to 9
+ * more_numbers - prints numbers from 0 to 14
  */
 void more_numbers(void)
 {
@@ -14,7 +14,7 @@ void more_numbers(void)
 
 		while (j <= 14)
 		{
-			if(j < 10)
+			if (j < 10)
 				_putchar((j / 10) + '0');
 			_putchar((j % 10) + '0');
 			j++;
