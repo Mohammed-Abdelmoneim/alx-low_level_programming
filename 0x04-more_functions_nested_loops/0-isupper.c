@@ -9,5 +9,5 @@ int  _isupper(int c)
 		return (1);
 	else
 		return (0);
-	return (r);
+	return (c);
 }
