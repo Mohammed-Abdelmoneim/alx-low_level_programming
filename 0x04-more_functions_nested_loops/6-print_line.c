@@ -3,6 +3,7 @@
 
 /**
  * print_line - print _ based on n number
+ * @n: first param
  */
 void print_line(int n)
 {
