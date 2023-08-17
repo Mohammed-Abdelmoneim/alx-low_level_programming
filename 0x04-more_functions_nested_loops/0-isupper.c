@@ -6,7 +6,7 @@
  * @c: first param
  *
  * Return: 0
- * */
+ */
 int  _isupper(int c)
 {
 	if (isupper(c) != 0)
