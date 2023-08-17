@@ -1,5 +1,4 @@
 #include "main.h"
-#include <ctype.h>
 
 /**
  * print_line - print _ based on n number
@@ -7,7 +6,7 @@
  */
 void print_line(int n)
 {
-	int i = n;
+	int i;
 
 	while (i < n)
 	{
