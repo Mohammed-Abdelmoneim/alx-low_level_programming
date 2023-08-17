@@ -15,7 +15,7 @@ void times_table(void)
 		{
 			int sum = i * n;
 
-			printf("%3d, ", sum);
+			printf("%2d, ", sum);
 		}
 		printf("\n");
 	}
