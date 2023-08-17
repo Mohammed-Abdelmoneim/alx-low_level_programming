@@ -6,12 +6,10 @@
  */
 void more_numbers(void)
 {
-	int i, j;
+	int i = 0, j = 0;
 
 	while (i <= 9)
 	{
-		j = 0;
-
 		while (j <= 14)
 		{
 			if (j < 9)
