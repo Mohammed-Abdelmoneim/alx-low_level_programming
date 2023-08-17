@@ -3,8 +3,11 @@
 
 int  _isupper(int c)
 {
-	if (isupper(c))
+	int r = isupper(c);
+
+	if (r != 0)
 		return (1);
 	else
 		return (0);
+	return (r);
 }
