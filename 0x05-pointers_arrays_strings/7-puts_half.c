@@ -27,18 +27,6 @@ void puts_half(char *str)
 			_putchar(*(str + i));
 		}
 	}
-
-
-	for (i = halflen; i < len; i++)
-	{
-		_putchar(*(str + i));
-		if (len % 2 != 0)
-		{
-			halflen = len - 1;
-
-			_putchar(*(str + i));
-		}
-	}
 	_putchar('\n');
 }
 
