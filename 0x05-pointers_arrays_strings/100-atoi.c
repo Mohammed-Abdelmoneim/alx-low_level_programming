@@ -10,13 +10,13 @@
 int _atoi(char *s)
 {
 	int i = 0;
-	int sign = -1;
+	int sign = 1;
 	int result = 0;
 
 	while (s[i] != '\0' && !isdigit(s[i]))
 	{
 		if (s[i] == '-')
-			sign *= -sign;
+			sign = -sign;
 		i++;
 	}
 
