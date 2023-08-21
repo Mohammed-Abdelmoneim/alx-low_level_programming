@@ -7,7 +7,7 @@
  * Return: 0 success
  */
 void _puts(char *str)
-{i
+{
 	puts(str);
 }
 
