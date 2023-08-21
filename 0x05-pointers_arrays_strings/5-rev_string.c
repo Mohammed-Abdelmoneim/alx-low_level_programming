@@ -1,4 +1,5 @@
 #include "main.h"
+#include "string.h"
 /**
  * rev_string - print a sting in reverse
  * @s: first param
