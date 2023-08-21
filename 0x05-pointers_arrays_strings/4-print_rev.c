@@ -15,5 +15,6 @@ void print_rev(char *str)
 	{
 		printf("%c", *(str + i));
 	}
+	printf("\n");
 }
 
