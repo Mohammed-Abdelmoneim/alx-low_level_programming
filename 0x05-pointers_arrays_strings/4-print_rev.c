@@ -11,7 +11,7 @@ void print_rev(char *str)
 	int i;
 	int l = strlen(str);
 
-	for (i = l; i >= 0; i--)
+	for (i = l; i >= 1; i--)
 	{
 		printf("%c", *(str + i));
 	}
