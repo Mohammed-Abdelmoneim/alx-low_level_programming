@@ -13,7 +13,7 @@ void print_rev(char *str)
 
 	for (i = l; i >= 1; i--)
 	{
-		printf("%c", *(str + i));
+		_putchar(*(str + i));
 	}
 }
 
