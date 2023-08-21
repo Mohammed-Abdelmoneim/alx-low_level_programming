@@ -16,7 +16,7 @@ int _atoi(char *s)
 	while (s[i] != '\0' && !isdigit(s[i]))
 	{
 		if (s[i] == '-')
-			sign *= -1;
+			sign *= -sign;
 		i++;
 	}
 
