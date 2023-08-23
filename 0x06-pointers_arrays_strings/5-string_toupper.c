@@ -9,11 +9,13 @@
  */
 char  *string_toupper(char *str)
 {
+	char *s = str;
+
 	while (*str != '\0')
 	{
 		*str = toupper(*str);
 		str++;
 	}
-	return (str);
+	return (s);
 }
 
