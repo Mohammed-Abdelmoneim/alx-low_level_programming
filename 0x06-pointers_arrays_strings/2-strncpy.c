@@ -6,7 +6,7 @@
  * @dest: the dest
  * @n: The number of characters to be copied
  *
- * Return: the concat result
+ * Return: the result
  */
 char *_strncpy(char *dest, char *src, int n)
 {
