@@ -3,23 +3,42 @@
 #include <ctype.h>
 /**
  * leet - concatenates two strings
- * @str: the string
+ * @s: the string
  *
  * Return: the leet result
  */
-char *leet(char *str)
+char *leet(char *s)
 {
-	char *s = str;
-	int len = strlen(str);
 	int i;
+	int len = strlen(s);
 
 	for (i = 0; i < len; i++)
 	{
-		if (tolower(str[i]) == 'a')
+		while (s[i] == 'a' || s[i] == 'A')
 		{
-			str[i] = '4';
+			s[i] = '4';
+			i++;
 		}
-		
+		while (s[i] == 'e' || s[i] == 'E')
+		{
+			s[i] = '3';
+			i++;
+		}
+		while (s[i] == 'o' || s[i] == 'O')
+		{
+			s[i] = '0';
+			i++;
+		}
+		while (s[i] == 't' || s[i] == 'T')
+		{
+			s[i] = '7';
+			i++;
+		}
+		while (s[i] == 'l' || s[i] == 'L')
+		{
+			s[i] = '1';
+			i++;
+		}
 	}
 	return (s);
 }
