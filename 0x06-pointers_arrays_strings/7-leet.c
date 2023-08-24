@@ -1,6 +1,4 @@
 #include "main.h"
-#include <string.h>
-#include <ctype.h>
 /**
  * leet - concatenates two strings
  * @s: the string
@@ -10,9 +8,8 @@
 char *leet(char *s)
 {
 	int i;
-	int len = strlen(s);
 
-	for (i = 0; i < len; i++)
+	for (i = 0; s[i] != '\0' ; i++)
 	{
 		while (s[i] == 'a' || s[i] == 'A')
 		{
