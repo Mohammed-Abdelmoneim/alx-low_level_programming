@@ -14,7 +14,8 @@ char *cap_string(char *str)
 
 	for (i = 0; i < len; i++)
 	{
-		if (isalpha(str[i]) && !isalpha(str[i - 1]))
+		if (isalpha(str[i]) && !isalpha(str[i - 1])
+		&& str[i - 1] != '-' && !isdigit(str[i - 1]))
 		{
 			str[i] = toupper(str[i]);
 		}
