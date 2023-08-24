@@ -19,22 +19,7 @@ char *leet(char *str)
 		{
 			str[i] = '4';
 		}
-		else if (tolower(str[i]) == 'e')
-		{
-			str[i] = '3';
-		}
-		else if (tolower(str[i]) == 'l')
-		{
-			str[i] = '1';
-		}
-		else if (tolower(str[i]) == 't')
-		{
-			str[i] = '7';
-		}
-		else if (tolower(str[i]) == 'o')
-		{
-			str[i] = '0';
-		}
+		
 	}
 	return (s);
 }
