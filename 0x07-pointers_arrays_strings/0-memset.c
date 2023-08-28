@@ -5,7 +5,7 @@
  * @s: a pointer to the block of memory to fill
  * @b: the value to be set
  * @n: the number of bytes to be set to the value.
- * 
+ *
  * Return: 0 success
  */
 
