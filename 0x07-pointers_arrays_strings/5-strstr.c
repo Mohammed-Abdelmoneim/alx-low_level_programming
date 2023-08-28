@@ -2,8 +2,8 @@
 #include <string.h>
 /**
  * _strstr - function that locates a substring.
- * @s: This is the main C string to be scanned.
- * @accept: the small string to be searched with-in haystack string.
+ * @haystack: This is the main C string to be scanned.
+ * @needle: the small string to be searched with-in haystack string.
  *
  * Return: 0 success
  */
