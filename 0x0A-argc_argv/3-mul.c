@@ -15,14 +15,10 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	else 
+	else
 	{
-	/*
-	int first = atoi(argv[1]);
-	int second = atoi(argv[2]);
-	*/
-		
 		int sum = atoi(argv[1]) * atoi(argv[2]);
+
 		printf("%d\n", sum);
 	}
 	return (0);
