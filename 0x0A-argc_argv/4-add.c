@@ -21,6 +21,16 @@ int main(int argc, char *argv[])
 
 		for (i = 1; i < argc; i++)
 		{
+			char *arg = argv[i];
+			int j;
+			for (j = 0; arg[j] != '\0'; j++)	
+			{
+				if (isalpha(arg[j]))
+				{
+					printf("Error\n");
+					return (1);
+				}
+			}
 			sum += atoi(argv[i]);
 		}
 		printf("%d\n", sum);
