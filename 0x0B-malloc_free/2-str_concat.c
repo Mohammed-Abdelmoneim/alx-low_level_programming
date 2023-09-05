@@ -10,27 +10,32 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-int len = strlen(s1) + strlen(s2) + 1;
-char *res = malloc(len);
+
+int len;
+char *res;
 
 if (s2 == NULL)
 {
-s2 = malloc(1);
-s2 = "";
+s2 = (char *)malloc(1);
+s2[0] = '\0';
 }
 
 if (s1 == NULL)
 {
 s1 = malloc(1);
-s1 = "";
+s1[0] = '\0';
 }
-strcpy(res, s1);
-strcat(res, s2);
+
+len = strlen(s1) + strlen(s2) + 1;
+res = (char *)malloc(len);
 
 if (res == NULL)
 {
 return (NULL);
 }
+
+strcpy(res, s1);
+strcat(res, s2);
 
 return (res);
 }
