@@ -12,7 +12,18 @@ char *str_concat(char *s1, char *s2)
 {
 int len = strlen(s1) + strlen(s2) + 1;
 char *res = malloc(len);
-  
+
+if (s2 == NULL)
+{
+s2 = malloc(1);
+s2 = "";
+}
+
+if (s1 == NULL)
+{
+s1 = malloc(1);
+s1 = "";
+}
 strcpy(res, s1);
 strcat(res, s2);
 
@@ -20,5 +31,6 @@ if (res == NULL)
 {
 return (NULL);
 }
-return res;
+
+return (res);
 }
