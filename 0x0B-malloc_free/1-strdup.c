@@ -13,13 +13,12 @@
 char *_strdup(char *str)
 {
 
-char *s;
-s = strdup(str);
+char *s = strdup(str);
 
 if (s == NULL)
 {
-printf("failed to allocate memory\n");
-}
+return (NULL);
+} 
 
 return (s);
 }
