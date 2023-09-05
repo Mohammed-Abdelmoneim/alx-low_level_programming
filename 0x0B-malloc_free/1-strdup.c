@@ -2,23 +2,19 @@
 #include <string.h>
 
 /**
- * create_array - returns a pointer to a newly allocated space
+ * _strdup - returns a pointer to a newly allocated space
  * in memory, which contains a copy of the string
  * given as a parameter.
- *@size: size of the array
- *@c: array
+ *@str: the string to be copied
  *
  * Return: 0 success
  */
 char *_strdup(char *str)
 {
 
-char *s = strdup(str);
-
-if (s == NULL)
+if (str == NULL)
 {
 return (NULL);
-} 
-
-return (s);
+}
+return (strdup(str));
 }
