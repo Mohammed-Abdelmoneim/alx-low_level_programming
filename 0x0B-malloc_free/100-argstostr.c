@@ -16,7 +16,7 @@ char *argstostr(int ac, char **av)
   {
     return (NULL);
   }
-  s = (char *)malloc(strlen(*av) * sizeof(char));
+  s = (char *)malloc(strlen(*av)  + 1 * sizeof(char));
   printf("%ld", strlen(*av));
   strcpy(s, av[0]);
   strcat(s, "\n");
