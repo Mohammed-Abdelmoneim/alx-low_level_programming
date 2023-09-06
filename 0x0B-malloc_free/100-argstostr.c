@@ -12,10 +12,10 @@ char *argstostr(int ac, char **av)
 {
   char *s;
   int i;
-  /* if (ac == NULL || av == NULL)
+  if (ac == 0 || av == NULL)
   {
     return (NULL);
-  } */
+  }
   s = (char *)malloc(ac * sizeof(char));
   strcpy(s, av[1]);
     strcat(s, "\n");
@@ -23,6 +23,10 @@ char *argstostr(int ac, char **av)
   {
     strcat(s, av[i]);
     strcat(s, "\n");
+  }
+  if (s == NULL)
+  {
+    return NULL;
   }
   return (s);
 }
