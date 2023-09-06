@@ -16,10 +16,11 @@ char *argstostr(int ac, char **av)
   {
     return (NULL);
   }
-  s = (char *)malloc(ac * sizeof(char));
-  strcpy(s, av[1]);
-    strcat(s, "\n");
-  for (i = 2; i < ac; i++)
+  s = (char *)malloc(strlen(*av) * sizeof(char));
+  printf("%ld", strlen(*av));
+  strcpy(s, av[0]);
+  strcat(s, "\n");
+  for (i = 1; i < ac; i++)
   {
     strcat(s, av[i]);
     strcat(s, "\n");
