@@ -12,15 +12,15 @@ char *argstostr(int ac, char **av)
 {
   char *s;
   int i;
+  int len = strlen(*av);
   if (ac == 0 || av == NULL)
   {
     return (NULL);
   }
-  s = (char *)malloc(strlen(*av)  + 1 * sizeof(char));
-  printf("%ld", strlen(*av));
-  strcpy(s, av[0]);
+  s = malloc(len * sizeof(char));
+  strcpy(s, av[1]);
   strcat(s, "\n");
-  for (i = 1; i < ac; i++)
+  for (i = 2; i < ac; i++)
   {
     strcat(s, av[i]);
     strcat(s, "\n");
