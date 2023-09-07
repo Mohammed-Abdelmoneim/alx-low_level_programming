@@ -34,7 +34,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (len >= n)
 	{
 		strcpy(str, s1);
-		strncpy(str + strlen(s1), s2, n);
+		strncat(str, s2, n + 1 );
 	}
 	else
 	{
