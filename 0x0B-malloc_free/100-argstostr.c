@@ -14,6 +14,7 @@ char *argstostr(int ac, char **av)
   char *s;
   int offset = 0; 
   int i;
+  
   if (ac == 0 || av == NULL)
   {
     return NULL;
@@ -24,13 +25,11 @@ char *argstostr(int ac, char **av)
     total_len += strlen(av[i]) + 1; 
   }
 
-  s = (char *)malloc(total_len);
+  s = (char *)malloc(total_len + 1);
   if (s == NULL)
   {
     return NULL; 
   }
-
-
   for (i = 0; i < ac; i++)
   {
     strcpy(s + offset, av[i]);
