@@ -10,24 +10,33 @@
  */
 char *argstostr(int ac, char **av)
 {
+  int total_len = 0;
   char *s;
+  int offset = 0; 
   int i;
-  int len = strlen(*av);
   if (ac == 0 || av == NULL)
-  {
-    return (NULL);
-  }
-  s = malloc(len * sizeof(char));
-  strcpy(s, av[1]);
-  strcat(s, "\n");
-  for (i = 2; i < ac; i++)
-  {
-    strcat(s, av[i]);
-    strcat(s, "\n");
-  }
-  if (s == NULL)
   {
     return NULL;
   }
-  return (s);
+
+  for (i = 0; i < ac; i++)
+  {
+    total_len += strlen(av[i]) + 1; 
+  }
+
+  s = (char *)malloc(total_len);
+  if (s == NULL)
+  {
+    return NULL; 
+  }
+
+
+  for (i = 0; i < ac; i++)
+  {
+    strcpy(s + offset, av[i]);
+    offset += strlen(av[i]);
+    s[offset++] = '\n'; 
+  }
+
+  return s;
 }
