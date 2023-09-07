@@ -5,7 +5,7 @@
  * string_nconcat -  concatenates two strings.
  *@s1: first string
  *@s2: second string
- *@n: number
+ *@n: number 
  *
  * Return: 0 success
  */
@@ -14,7 +14,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *str;
 	unsigned int len;
 
-	str = malloc(n + 1 *  sizeof(char));
+	str = malloc(n *  sizeof(char));
 	if (str == NULL)
 	{
 		return (NULL);
@@ -34,7 +34,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (len >= n)
 	{
 		strcpy(str, s1);
-		strncat(str, s2, n);
+		strncat(str, s2, len);
 	}
 	else
 	{
