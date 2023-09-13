@@ -9,5 +9,8 @@ void print_name(char *name, void (*f)(char *))
 {
 	if (name == NULL)
 		exit(EXIT_FAILURE);
-	(*f)(name);
+	else
+		(*f)(name);
+		
+	exit(EXIT_SUCCESS);
 }
