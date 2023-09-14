@@ -23,7 +23,7 @@ void print_all(const char * const format, ...)
 				printf("%s%c", s, va_arg(args, int));
 				break;
 			case 'i':
-				printf("%s%i", s, va_arg(args, int));
+				printf("%s%d", s, va_arg(args, int));
 				break;
 			case 'f':
 				printf("%s%f", s, va_arg(args, double));
