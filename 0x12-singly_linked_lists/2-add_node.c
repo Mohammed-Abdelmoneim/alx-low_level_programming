@@ -10,7 +10,7 @@
 */
 list_t *add_node(list_t **head, const char *str)
 {
-ist_t *temp;
+	list_t *temp;
 
 	temp = malloc(sizeof(list_t));
 
